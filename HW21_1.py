@@ -85,7 +85,7 @@ class MyMatrix(object):
         size2 = list(self.__count_rows_columns(ml2))
         rows2, columns2 = size2[0], size2[1]                    # number of rows and columns in matrix 2
         try:
-            if (rows1 != columns2) or (rows2 != columns1):
+            if (rows1 != rows2) or (columns1 != columns2):
                 raise Exception
             else:
                 d = []
